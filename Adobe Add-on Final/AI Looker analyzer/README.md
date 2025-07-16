@@ -14,7 +14,7 @@
 
 * ## **Solution 2: Marketing Performance Analyzer (AI Looker Analyzer)**
 
-## **✨ AI Marketing Content Generator – User Guide**
+## **AI Marketing Content Generator – User Guide**
 
 ### **Step 1: Open Adobe Express Add-on Console**
 
@@ -24,7 +24,7 @@ Navigate to [Adobe Express Developer Console](https://developer.adobe.com/expres
 
 ### **Step 2: Import Add-on Code**
 
-Clone or download the GitHub repository and upload the HTML, CSS, `iframe.js`, and `document.js` into the Adobe Express Add-on tabs.
+Clone or download the GitHub repository and upload the HTML, CSS, "ifram.js", and "document.js" into the Adobe Express Add-on tabs.
 
 ---
 
@@ -74,7 +74,7 @@ Click the **"Generate Content"** button to receive:
 
 3. Paste the copied content directly into your Adobe Express design.
 
-*Optional: You can also click ➕ "Insert" (if supported) to place content into the canvas automatically.*
+*Optional: You can also click  "Insert" (if supported) to place content into the canvas automatically.*
 
 ---
 
@@ -91,11 +91,11 @@ Click **"Choose File"** in the analyzer section and upload a CSV or Excel file c
 
 The dashboard automatically visualizes your metrics using **Google Looker Studio**, embedded inside the Add-on.
 
-* 📈 Impressions
+*  Impressions
 
-* 💬 Engagement
+* Engagement
 
-* 🧲 CTR (Click-through Rate)
+*  CTR (Click-through Rate)
 
 ---
 
@@ -115,7 +115,7 @@ Best-performing formats
 
 ### **Step 4: Copy Insights to Clipboard**
 
-Click **📋 Copy** to reuse the insights in your campaign plan or report.
+Click **Copy** to reuse the insights in your campaign plan or report.
 
 ## **Technical Requirements**
 
