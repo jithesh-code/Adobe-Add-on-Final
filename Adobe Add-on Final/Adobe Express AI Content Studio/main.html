@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ContentGenius</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="heading-wrapper">
+  <h2>AI Marketing Content Generator</h2>
+   </div>
+    <label for="description"><span>Campaign Description</span></label>
+
+    <textarea id="description" placeholder="Describe your campaign..."></textarea>
+<br>
+<br>
+    <label for="platform"><span>Platform</span></label>
+    <select id="platform">
+      <option value="Instagram">Instagram</option>
+      <option value="LinkedIn">LinkedIn</option>
+      <option value="Twitter">Twitter</option>
+    </select>
+<br>
+<br>
+    <label for="tone"><span>Tone</span></label>
+    <select id="tone">
+      <option value="Casual">Casual</option>
+      <option value="Formal">Formal</option>
+      <option value="Bold">Bold</option>
+    </select>
+<br>
+    <button id="generate">Generate Content</button>
+<div id="loading" class="loading-spinner" style="display: none;"> <div class="spinner"></div> <p>Generating content...</p> </div>
+    <div id="results" class="result-block" style="display: none;">
+      <h3>Caption</h3>
+      <p id="caption"></p>
+      <h3>Hashtags</h3>
+      <p id="hashtags"></p>
+      <h3>Call to Action</h3>
+      <p id="cta"></p>
+      <button id="copy">📋 Copy</button>
+      <button id="insert">➕ Insert into Canvas</button>
+    </div>
+  </div>
+
+  <script src="iframe.js" type="module"></script>
+</body>
+</html>

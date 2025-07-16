@@ -1,0 +1,244 @@
+.heading-wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 0.5rem;
+  /* background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%); */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.heading-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://play-lh.googleusercontent.com/RKt7FfLHYfXyEJkY2imqAe1BP96wjAHtm7tH_rZZmBBX2QkC_2luYj6jXlPqoRhX5HmB');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.heading-wrapper h2 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  z-index: 1;
+  background: linear-gradient(90deg, #d32660, #ff0080, #ff5e00, #7928ca);
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+
+/* Reset & Base */
+body {
+font-family: "PT Sans", sans-serif;
+background: linear-gradient(135deg, #0d0e0e, #e6e9f0);
+color: #1a202c;
+padding: 2rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+min-height: 100vh;
+box-sizing: border-box;
+}
+
+/* Main Container */
+.container {
+max-width: 640px;
+width: 100%;
+background: linear-gradient(135deg, #a8abae, #131313, #120b4d, #121212);
+background-size: 400% 400%;
+animation: gradientFlow 10s ease infinite;
+padding: 2.5rem;
+border-radius: 1.25rem;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+overflow: hidden;
+box-sizing: border-box;
+}
+
+/* Gradient Animation */
+@keyframes gradientFlow {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* Heading Badge - Multicolor Box */
+/* h2 {
+background: linear-gradient(90deg, #7928ca, #ff0080, #ff8c00);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Poppins", sans-serif;
+font-size: 1.75rem;
+text-align: center;
+margin-bottom: 2rem;
+padding: 0.5rem 1rem;
+border-radius: 12px;
+background-color: #f3f4f6;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+} */
+
+/* Label */
+label span {
+  background: linear-gradient(90deg, #6b6769, #b689a0, #595672, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+
+
+/* Inputs */
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+
+  /* Vibrant Gradient Background */
+  background: linear-gradient(135deg, #9eb5c1, #f3f0f5, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: inputGradientFlow 8s ease infinite;
+
+  /* Optional Glow/Depth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  color: #1a202c;
+  font-weight: bold;
+}
+
+/* Animate gradient */
+@keyframes inputGradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+textarea:focus,
+select:focus {
+outline: none;
+border-color: #805ad5;
+box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.3);
+}
+
+/* Buttons */
+button {
+margin-top: 1.2rem;
+padding: 0.75rem 1.2rem;
+background-image: linear-gradient(to right, #535177, #0c0b0c);
+
+color: white;
+font-weight: 600;
+border: none;
+border-radius: 0.5rem;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+background-image: linear-gradient(to right,  #0c0b0c,#535177);
+
+/* background-image: linear-gradient(#b0a0cf, #343336, #756a97); */
+box-shadow: 0 4px 14px rgba(38, 132, 255, 0.4);
+transform: translateY(-2px);
+}
+
+button:active {
+transform: scale(0.98);
+background-image: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Result Block */
+.result-block {
+margin-top: 2rem;
+background: linear-gradient(135deg, #2e2c37, #b2beca, #5c5b60);
+background-size: 300% 300%;
+animation: fadeResult 8s ease infinite;
+padding: 1.5rem;
+border-radius: 1rem;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+border-left: 5px solid #3182ce;
+}
+
+@keyframes fadeResult {
+0% { background-position: left; }
+100% { background-position: right; }
+}
+
+.result-block p {
+background: linear-gradient(90deg, #f8f5f5, #87858b);
+background-size: 200% 200%;
+animation: fadeResultText 8s ease infinite;
+padding: 0.5rem;
+border-radius: 0.375rem;
+font-family: monospace;
+white-space: pre-wrap;
+word-break: break-word; /* Important for long hashtags/words /
+overflow-wrap: break-word; / Extra support for wrapping */
+margin-top: 0.5rem;
+color: #000000;
+}
+
+
+/* Loading Spinner */
+.loading-spinner {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 1rem;
+color: #ffffff;
+font-weight: 500;
+}
+
+.spinner {
+width: 36px;
+height: 36px;
+border: 4px solid rgba(255, 255, 255, 0.2);
+border-top-color: #ffffff;
+border-radius: 50%;
+animation: spin 1s linear infinite;
+margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+to {
+transform: rotate(360deg);
+}
+}
+
+/* Copy & Insert Buttons Side by Side */
+#copy,
+#insert {
+display: inline-block;
+margin-right: 0.5rem;
+margin-top: 1rem;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+.container {
+padding: 1.25rem;
+}
+
+h2 {
+font-size: 1.5rem;
+}
+}
